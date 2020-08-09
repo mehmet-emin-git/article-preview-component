@@ -6,12 +6,110 @@
 
 body {
   font-size: 13px;
+  font-family: "Manrope", sans-serif;
+  color: #48556a;
   margin: 0;
 }
 
-h1,
-h2,
-h3 {
-  font-family: "Manrope", sans-serif;
+img {
+  max-width: 100%;
+}
+
+p {
+  font-weight: 500;
+  color: #6d7f97;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+  padding: 1.5rem;
+  background: #ecf2f8;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.component {
+  max-width: 700px;
+  -webkit-box-shadow: 1px 5px 15px rgba(0, 0, 0, 0.15);
+          box-shadow: 1px 5px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.component .content {
+  background: white;
+  width: 60%;
+  padding: 1.5rem 2.5rem;
+}
+
+.component .image {
+  width: 40%;
+  background: url("./images/drawers.jpg") no-repeat center/cover;
+}
+
+.component .user {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.component .user .info {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.component .user .info .avatar {
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+}
+
+.component .user .info .name {
+  margin-left: 1rem;
+}
+
+.component .user .info .name h4,
+.component .user .info .name p {
+  margin: 0;
+}
+
+.component .user .share {
+  background: #ecf2f8;
+  border: none;
+  outline: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.social {
+  display: none;
 }
 /*# sourceMappingURL=styles.css.map */
