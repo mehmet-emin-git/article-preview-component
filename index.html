@@ -3,30 +3,68 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
-
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-
     <title>Article preview component</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    Shift the overall look and feel by adding these wonderful touches to
-    furniture in your home Ever been in a room and felt like something was
-    missing? Perhaps it felt slightly bare and uninviting. I’ve got some simple
-    tips to help you make any room feel complete. Michelle Appleton 28 Jun 2020
-    Share
+    <div class="container">
+      <div class="flex">
+        <div class="image">
+          <img src="./images/drawers.jpg" alt="drawers image" />
+        </div>
+        <div class="content">
+          <h1>
+            Shift the overall look and feel by adding these wonderful touches to
+            furniture in your home
+          </h1>
+          <p>
+            Ever been in a room and felt like something was missing? Perhaps it
+            felt slightly bare and uninviting. I’ve got some simple tips to help
+            you make any room feel complete.
+          </p>
+          <div class="user flex">
+            <div class="info">
+              <img
+                src="./images/avatar-michelle.jpg"
+                alt="avatar image"
+                class="avatar"
+              />
+              <div class="name">
+                <h3>Michelle Appleton</h3>
+                <p>28 Jun 2020 Share</p>
+              </div>
+            </div>
+            <div class="social flex">
+              <a href="https://share.com"
+                ><img src="./images/icon-share.svg" alt="share icon"
+              /></a>
+              <a href="https://facebook.com"
+                ><img src="./images/favicon-32x32.png" alt="facebook icon"
+              /></a>
+              <a href="https://twitter.com"
+                ><img src="./images/icon-twitter.svg" alt="twitter icon"
+              /></a>
+              <a href="https://pinterest.com"
+                ><img src="./images/icon-pinterest.svg" alt="pinterest icon"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-    <div class="attribution">
+    <!-- <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </div>
+      >. Coded by <a href="#">Mechitaou Mohammed Amine</a>.
+    </div> -->
   </body>
 </html>
