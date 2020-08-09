@@ -12,47 +12,62 @@
     />
     <title>Article preview component</title>
     <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
   </head>
   <body>
     <div class="container">
-      <div class="component flex">
-        <div class="image"></div>
-        <div class="content">
-          <h2>
-            Shift the overall look and feel by adding these wonderful touches to
-            furniture in your home
-          </h2>
-          <p>
-            Ever been in a room and felt like something was missing? Perhaps it
-            felt slightly bare and uninviting. I’ve got some simple tips to help
-            you make any room feel complete.
-          </p>
-          <div class="user flex">
-            <div class="info flex">
-              <img
-                src="./images/avatar-michelle.jpg"
-                alt="avatar image"
-                class="avatar"
-              />
-              <div class="name">
-                <h4>Michelle Appleton</h4>
-                <p>28 Jun 2020 Share</p>
+      <div class="wrapper">
+        <div class="component flex">
+          <div class="image"></div>
+          <div class="content">
+            <h2>
+              Shift the overall look and feel by adding these wonderful touches
+              to furniture in your home
+            </h2>
+            <p>
+              Ever been in a room and felt like something was missing? Perhaps
+              it felt slightly bare and uninviting. I’ve got some simple tips to
+              help you make any room feel complete.
+            </p>
+            <div class="user flex">
+              <div class="info flex">
+                <img
+                  src="./images/avatar-michelle.jpg"
+                  alt="avatar image"
+                  class="avatar"
+                />
+                <div class="name">
+                  <h3>Michelle Appleton</h3>
+                  <p>28 Jun 2020 Share</p>
+                </div>
               </div>
-            </div>
-            <button class="share">
-              <img src="./images/icon-share.svg" alt="share icon" />
-            </button>
-            <div class="social">
-              <p>share</p>
-              <a href="https://facebook.com"
-                ><img src="./images/icon-facebook.svg" alt="facebook icon"
-              /></a>
-              <a href="https://twitter.com"
-                ><img src="./images/icon-twitter.svg" alt="twitter icon"
-              /></a>
-              <a href="https://pinterest.com"
-                ><img src="./images/icon-pinterest.svg" alt="pinterest icon"
-              /></a>
+              <button class="share">
+                <img src="./images/icon-share.svg" alt="share icon" />
+              </button>
+              <div class="social">
+                <p>share</p>
+                <ul class="flex icons">
+                  <li>
+                    <a href="https://facebook.com"
+                      ><img
+                        src="./images/icon-facebook.svg"
+                        alt="facebook icon"
+                    /></a>
+                  </li>
+                  <li>
+                    <a href="https://twitter.com"
+                      ><img src="./images/icon-twitter.svg" alt="twitter icon"
+                    /></a>
+                  </li>
+                  <li>
+                    <a href="https://pinterest.com"
+                      ><img
+                        src="./images/icon-pinterest.svg"
+                        alt="pinterest icon"
+                    /></a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
