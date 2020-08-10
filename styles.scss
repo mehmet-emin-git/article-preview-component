@@ -56,7 +56,7 @@ p {
   .content {
     background: white;
     width: 60%;
-    padding: 2rem 1.8rem;
+    padding: 2rem 1.8rem 1.2rem 1.8rem;
 
     h2 {
       margin-top: 0;
@@ -113,9 +113,19 @@ p {
       cursor: pointer;
       transition: 0.1s ease-out all;
 
+      .light {
+        display: none;
+      }
+
       &:hover,
       &:active {
-        background-color: $very-dark-grayish-blue;
+        background-color: $desaturated-dark-blue;
+        .light {
+          display: block;
+        }
+        .dark {
+          display: none;
+        }
       }
     }
 
@@ -176,7 +186,7 @@ p {
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 430px) {
   .flex {
     flex-direction: column;
   }
@@ -192,94 +202,77 @@ p {
 
     .content {
       width: 100%;
-    }
-  }
+      position: relative;
 
-  .user {
-    flex-direction: row;
-    .info {
-      flex-direction: row;
-      .name {
-        p {
-          font-size: 0.8rem;
-        }
-
-        h3 {
-          font-size: 0.85rem;
-          letter-spacing: 0.5px;
-        }
-      }
-    }
-
-    .share {
-      background: $light-grayish-blue;
-      border: none;
-      outline: none;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 2.2rem;
-      height: 2.2rem;
-      border-radius: 50%;
-      cursor: pointer;
-      transition: 0.1s ease-out all;
-
-      &:hover,
-      &:active {
-        background-color: $very-dark-grayish-blue;
-      }
-    }
-
-    .social {
-      position: absolute;
-      background: $very-dark-grayish-blue;
-      padding: 0.1rem 2.3rem;
-      border-radius: 10px;
-      display: flex;
-      justify-content: space-evenly;
-      align-items: center;
-      top: 8.5rem;
-      right: -6rem;
-      box-shadow: 0px 7px 12px rgba(0, 0, 0, 0.2);
-      display: none;
-      opacity: 0;
-      transform: translateY(2rem);
-      transition: 0.2s ease-out all;
-
-      &.show {
-        opacity: 1;
-        transform: translateY(0);
-        display: flex;
-      }
-
-      &::after {
-        content: "";
-        position: absolute;
-        top: 3rem;
-        right: 43%;
-        border-left: 20px solid transparent;
-        border-right: 20px solid transparent;
-        border-top: 20px solid $very-dark-grayish-blue;
+      h2 {
+        font-size: 1.1rem;
+        line-height: 1.5em;
+        letter-spacing: 0.3px;
       }
 
       p {
-        color: white;
-        text-transform: uppercase;
-        font-weight: 400;
-        font-size: 0.9rem;
-        color: $grayish-blue;
-        letter-spacing: 4px;
+        line-height: 1.5em;
+        letter-spacing: 0.5px;
+      }
+    }
+
+    .user {
+      flex-direction: row;
+      .info {
+        flex-direction: row;
       }
 
-      .icons {
-        padding-left: 0;
-        align-items: center;
-        justify-content: space-around;
+      .share {
+        z-index: 100;
+        width: 2rem;
+        height: 2rem;
+        &:hover,
+        &:active {
+          background-color: $desaturated-dark-blue;
+        }
+      }
 
-        li {
-          margin-left: 1.1rem;
-          a {
-            padding: 0.3rem;
+      .social {
+        position: absolute;
+        background: $very-dark-grayish-blue;
+        padding: 0;
+        border-radius: initial;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        display: flex;
+        justify-content: flex-start;
+        top: 15rem;
+        height: 4.5rem;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        display: none;
+
+        &::after {
+          display: none;
+        }
+
+        p {
+          color: white;
+          text-transform: uppercase;
+          font-weight: 400;
+          font-size: 0.9rem;
+          color: $grayish-blue;
+          letter-spacing: 4px;
+          margin-left: 2rem;
+        }
+
+        .icons {
+          flex-direction: row;
+          padding-left: 0;
+          align-items: center;
+          justify-content: space-evenly;
+
+          li {
+            margin-left: 1.1rem;
+            a {
+              padding: 0rem;
+            }
           }
         }
       }
